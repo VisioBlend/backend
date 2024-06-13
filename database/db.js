@@ -22,7 +22,7 @@ const query = async (query,value)=>{
         const [result] = await db.query(query, value??[])
         return result
     }catch(e){
-        console.log("GAGAL")
+        console.log(e)
     }
 }
 
